@@ -17,7 +17,7 @@ export default function Movie() {
     async function getData() {
         try {
             const result = await axios({
-                method: 'get',
+                method: 'get', 
                 url: 'http://localhost:3001/movies',
                 responseType: 'json'
             });
@@ -30,7 +30,7 @@ export default function Movie() {
 
     return (
         <>
-            <button onClick={getData}>Refresh</button>
+            <button onClick={getData}>Load</button>
             <ul>
                 {movies.map(x => {
                     return <li key={x}>{x}</li>
