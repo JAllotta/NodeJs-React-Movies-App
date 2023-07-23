@@ -1,0 +1,9 @@
+{
+    "name": "movie-app",
+    "version": "1.0.0",
+    "private": true,   
+    "scripts": {
+      "start": "cd movie-backend && npm start && cd ../movie-frontend && npm start"
+    }
+  }
+  
